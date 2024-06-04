@@ -1,0 +1,25 @@
+package FlightBookingSystem;
+
+//FlightManagementSystem/Booking.java
+public class Booking {
+ private User user;
+ private Flight flight;
+
+ public Booking(User user, Flight flight) {
+     this.user = user;
+     this.flight = flight;
+ }
+
+ public User getUser() {
+     return user;
+ }
+
+ public Flight getFlight() {
+     return flight;
+ }
+
+ @Override
+ public String toString() {
+     return "User: " + user.getUsername() + ", " + flight.toString();
+ }
+}
